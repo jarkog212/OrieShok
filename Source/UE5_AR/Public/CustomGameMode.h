@@ -12,7 +12,7 @@ class AGameplayPlane;
 class AFishingPond;
 class AHelloARManager;
 class UCustomUserWidget;
-class USoundCue;
+class USoundBase;
 
 //! @brief Enumerator specifying the different game states
 UENUM()
@@ -166,7 +166,7 @@ public:
 
 	//! The sound "bank" asset for the SFX to be played at successful gameplay plane spawn
 	UPROPERTY(Category = "Audio", EditAnywhere, BlueprintReadWrite)
-		USoundCue* PlaneSpawnSfx;
+		USoundBase* PlaneSpawnSfx;
 
 	// Constants
 

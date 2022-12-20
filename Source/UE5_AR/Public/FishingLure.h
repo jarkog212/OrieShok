@@ -7,7 +7,7 @@
 #include "FishingLure.generated.h"
 
 class UNiagaraSystem;
-class USoundCue;
+class USoundBase;
 
 //! @brief Class handling the fishing lure of the fishing game
 UCLASS()
@@ -48,7 +48,7 @@ public:
 
 	//! Sound "bank" asset for splash sounds
 	UPROPERTY(Category = "Fishing Lure Assets", EditAnywhere, BlueprintReadWrite)
-		USoundCue* SplashSfx = nullptr;
+		USoundBase* SplashSfx = nullptr;
 
 	// Constants
 

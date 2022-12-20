@@ -13,7 +13,7 @@
 #include "Camera/CameraComponent.h"
 #include "CustomUserWidget.h"
 #include "FishingPond.h"
-#include "Sound/SoundCue.h"
+#include "Sound/SoundBase.h"
 
 ACustomGameMode::ACustomGameMode() :
 	SpawnedPlane(nullptr)

@@ -9,7 +9,7 @@
 #include "CustomGameMode.h"
 #include "HousePlane.h"
 #include "PlaceableActor.h"
-#include "Sound/SoundCue.h"
+#include "Sound/SoundBase.h"
 #include "Components/AudioComponent.h"
 
 // Sets default values

@@ -8,7 +8,7 @@
 #include "Camera/CameraComponent.h"
 #include "CustomUserWidget.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
-#include "Sound/SoundCue.h"
+#include "Sound/SoundBase.h"
 
 AFish::AFish()
 {

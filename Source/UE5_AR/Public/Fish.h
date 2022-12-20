@@ -8,7 +8,7 @@
 #include "Fish.generated.h"
 
 class AFishingLure;
-class USoundCue;
+class USoundBase;
 
 //! @brief Class of the fishing pond fish actors
 UCLASS()
@@ -50,7 +50,7 @@ public:
 
 	//! Particle effect for water splash
 	UPROPERTY(Category = "Fish Assets", EditAnywhere, BlueprintReadWrite)
-		USoundCue* SplashSfx = nullptr;
+		USoundBase* SplashSfx = nullptr;
 
 	// Constants
 

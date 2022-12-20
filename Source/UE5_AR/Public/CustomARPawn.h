@@ -9,7 +9,7 @@
 
 class UCameraComponent;
 class APlaceableActor;
-class USoundCue;
+class USoundBase;
 class UAudioComponent;
 
 //! @brief The customized pawn class used to represent the player
@@ -214,7 +214,7 @@ public:
 
 	//! Sound "Bank" that handles the background music and background effects
 	UPROPERTY(Category = "Custom AR Pawn Audio", EditAnywhere, BlueprintReadWrite)
-		USoundCue* BgmCue = nullptr;
+		USoundBase* BgmCue = nullptr;
 
 	// Functionality
 
