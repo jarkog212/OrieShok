@@ -221,7 +221,7 @@ void AFish::Catch()
 	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Blue, FString::Printf(TEXT("Caught!")));
 
 	if (IsValid(SplashSfx))
-		UGameplayStatics::PlaySoundAtLocation(this, SplashSfx, GetActorLocation());
+		UGameplayStatics::PlaySoundAtLocation(this, SplashSfx, GetActorLocation(), GetActorRotation());
 }
 
 void AFish::SpookFish(const FVector& WorldSpookSource)
@@ -240,7 +240,7 @@ void AFish::SpookFish(const FVector& WorldSpookSource)
 	RelativePointOfInterest = RelativeTransform.GetLocation() + (RelativeDirectionToSpookSource * -1) * 150;
 
 	if (IsValid(SplashSfx))
-		UGameplayStatics::PlaySoundAtLocation(this, SplashSfx, GetActorLocation());
+		UGameplayStatics::PlaySoundAtLocation(this, SplashSfx, GetActorLocation(), GetActorRotation());
 }
 
 bool AFish::ShouldNotRemoveFromWorld() const
