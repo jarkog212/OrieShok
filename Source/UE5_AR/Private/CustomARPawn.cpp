@@ -208,6 +208,11 @@ void ACustomARPawn::OnUIChangeBgfVolume(float const VolumeDelta)
 	AudioComponent->SetFloatParameter("BGFVolume", BgfAudioVolume);
 }
 
+void ACustomARPawn::OnUIAudioSetRadioEffect(const bool State)
+{
+	AudioComponent->SetTriggerParameter(State ? "RadioEnable" : "RadioDisable");
+}
+
 void ACustomARPawn::AddNewToTempInventory(APlaceableActor* ToAdd)
 {
 	ToAdd->PinComponent = nullptr;

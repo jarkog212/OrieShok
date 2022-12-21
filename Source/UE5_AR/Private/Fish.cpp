@@ -418,7 +418,7 @@ bool AFish::MockCoro_ReelInAnimation(const float DeltaTime)
 			Player->AddNewToTempInventory(this);
 
 			if (IsValid(CaughtSfx))
-				UGameplayStatics::PlaySoundAtLocation(this, CaughtSfx, GetActorLocation());
+				UGameplayStatics::PlaySoundAtLocation(this, CaughtSfx, GetActorLocation(), GetActorRotation(), 0.6);
 
 			return true;
 		}

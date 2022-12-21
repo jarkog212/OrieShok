@@ -109,12 +109,17 @@ public:
 	//! @brief UI event function, function to change the BGM volume levels
 	//! @param VolumeDelta - The amount by which to change the volume [-1,1]
 	UFUNCTION(BlueprintCallable, Category = "Custom AR Pawn UI Events")
-		void OnUIChangeBgmVolume(float const VolumeDelta);
+		void OnUIChangeBgmVolume(const float VolumeDelta);
 
 	//! @brief UI event function, function to change the BGF volume levels
 	//! @param VolumeDelta - The amount by which to change the volume [-1,1]
 	UFUNCTION(BlueprintCallable, Category = "Custom AR Pawn UI Events")
-		void OnUIChangeBgfVolume(float const VolumeDelta);
+		void OnUIChangeBgfVolume(const float VolumeDelta);
+
+	//! @brief UI event function, function that switches radio effect of BGM
+	//! @param State - Whether to enable or disable the effect.
+	UFUNCTION(BlueprintCallable, Category = "Custom AR Pawn UI Events")
+		void OnUIAudioSetRadioEffect(const bool State);
 
 	// Inventory
 
