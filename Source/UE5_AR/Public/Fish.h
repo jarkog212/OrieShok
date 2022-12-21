@@ -52,6 +52,10 @@ public:
 	UPROPERTY(Category = "Fish Assets", EditAnywhere, BlueprintReadWrite)
 		USoundBase* SplashSfx = nullptr;
 
+	//! Particle effect for water splash
+	UPROPERTY(Category = "Fish Assets", EditAnywhere, BlueprintReadWrite)
+		USoundBase* CaughtSfx = nullptr;
+
 	// Constants
 
 	//! Fade in animation custom factor, used in materials

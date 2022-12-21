@@ -416,6 +416,10 @@ bool AFish::MockCoro_ReelInAnimation(const float DeltaTime)
 			WorldActorLocation.Z = 5000;
 			SetARPosition(WorldActorLocation);
 			Player->AddNewToTempInventory(this);
+
+			if (IsValid(CaughtSfx))
+				UGameplayStatics::PlaySoundAtLocation(this, CaughtSfx, GetActorLocation());
+
 			return true;
 		}
 
