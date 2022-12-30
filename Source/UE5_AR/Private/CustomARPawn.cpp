@@ -304,6 +304,12 @@ void ACustomARPawn::SwitchBgm(const int32 StateParam)
 	AudioComponent->SetIntParameter("State", StateParam);
 }
 
+void ACustomARPawn::SilenceBGMForSFX(float SilenceTime)
+{
+	AudioComponent->SetFloatParameter("SFXTimeDelay", SilenceTime);
+	AudioComponent->SetTriggerParameter("SFXSilence");
+}
+
 void ACustomARPawn::OnScreenTouchRelease(const ETouchIndex::Type FingerIndex, const FVector &ScreenPos)
 {
 	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Yellow, TEXT("Screen Touch Reached"));

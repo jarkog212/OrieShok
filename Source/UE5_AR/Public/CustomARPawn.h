@@ -201,6 +201,11 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Custom AR Pawn Audio")
 		float GetBgfVolume() const { return BgfAudioVolume; };
 
+	//! @brief Function that triggers BGM to be silenced (and then re-enabled)
+	//! @param SilenceTime - [Optional] The amount of seconds the BGM will be completely silent (not in Attack nor Release)
+	UFUNCTION(BlueprintCallable, Category = "Custom AR Pawn Audio")
+		void SilenceBGMForSFX(float SilenceTime = 1.5);
+
 	// Constants
 
 	//! The number of frames to wait when determining the touch type
